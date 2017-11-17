@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><?php echo $this->title; ?></title>
+</head>
+<body>
+<div align="center" style="margin-top: 160px;">
+	<form action="<?php echo Zend_Controller_Front::getInstance()->getBaseUrl();?>/auth/login" method="post">
+
+		<label for="email">Email:</label>
+		<input type="text" name="email" placeholder="your email">
+		<br><br>
+		<label for="password">Password: </label>
+		<input type="password" name="password" placeholder="your password">
+		<br><br>
+		<input type="submit" value="Login">
+
+	</form>
+</div>
+
+</body>
+</html>
